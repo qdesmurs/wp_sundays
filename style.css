@@ -1,0 +1,215 @@
+.monHeader {
+  background-color: #281400; }
+  .monHeader .list-inline {
+    color: white;
+    margin-left: 5em;
+    font-size: 1.8em;
+    font-family: 'Alegreya Sans', sans-serif; }
+    .monHeader .list-inline span {
+      padding: 1em;
+      font-size: 0.7em; }
+  .monHeader .marginHeader {
+    padding: 15em;
+    color: white;
+    font-family: 'Domine', serif; }
+    .monHeader .marginHeader button,
+    .monHeader .marginHeader h1 {
+      text-transform: uppercase; }
+    .monHeader .marginHeader h1,
+    .monHeader .marginHeader h2 {
+      font-weight: bold;
+      font-size: 2.7em;
+      margin-bottom: 1em; }
+    .monHeader .marginHeader button {
+      background-color: #A28F61;
+      border-radius: 0.5em;
+      padding: 1em 3em;
+      border: none;
+      font-weight: bold; }
+  .monHeader .glyphicon-menu-down {
+    padding: 1em;
+    font-size: 1.5em;
+    color: white; }
+  .monHeader a {
+    color: white; }
+
+h3 {
+  margin: 0 0 1em;
+  font-family: 'Domine', serif;
+  font-size: 3em;
+  margin: 1em 0; }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto; }
+  section article {
+    width: 15%;
+    box-shadow: 0 5px 7px -1px lightgrey;
+    margin-bottom: 1em; }
+  section img {
+    width: 100%; }
+  section h4,
+  section h5,
+  section span {
+    padding-left: 1em; }
+  section .onsale {
+    color: #ffcc17; }
+  section .soldout {
+    color: #929292; }
+
+.monMain .text-center {
+  font-family: 'Domine', serif;
+  font-size: 3em;
+  margin: 1em 0; }
+.monMain .col-md-2 {
+  padding: 0;
+  margin: 0 0.8em 0.8em 0;
+  width: 15.7%;
+  border-radius: 0.5em;
+  box-shadow: 0 5px 7px -1px lightgrey; }
+  .monMain .col-md-2 img {
+    width: 100%;
+    height: auto; }
+  .monMain .col-md-2 h4,
+  .monMain .col-md-2 h5,
+  .monMain .col-md-2 span {
+    margin-left: 1em; }
+  .monMain .col-md-2 h4 {
+    color: #a28f61; }
+  .monMain .col-md-2 .onsale {
+    color: #ffcc17; }
+  .monMain .col-md-2 .soldout {
+    color: #929292; }
+  .monMain .col-md-2 span {
+    padding-bottom: 1em; }
+.monMain .lorem {
+  margin-bottom: 7em; }
+.monMain .col-md-5 {
+  padding-left: 3em; }
+  .monMain .col-md-5 h6 {
+    font-size: 2em;
+    margin: 0 0 1em; }
+.monMain .col-md-10 {
+  padding-left: 5em; }
+.monMain .col-md-3 {
+  padding: 0; }
+  .monMain .col-md-3 img {
+    margin-right: 0.9em; }
+.monMain .champ {
+  border: none;
+  box-shadow: 1px 1px 15px 8px lightgrey;
+  height: 2em;
+  width: 3em;
+  border-radius: 0.5em; }
+.monMain button {
+  border: none;
+  box-shadow: 1px 1px 15px 8px lightgrey;
+  height: 2em;
+  width: 3em;
+  border-radius: 0.5em; }
+.monMain .button {
+  width: 8em; }
+
+.monFooter {
+  background-color: #0f3e57;
+  padding: 2em 8em 2em 20em;
+  margin-top: 5em; }
+  .monFooter a,
+  .monFooter dt,
+  .monFooter li {
+    color: white;
+    list-style-type: none;
+    line-height: 3em; }
+  .monFooter ul {
+    padding: 0; }
+  .monFooter dl {
+    margin: auto; }
+  .monFooter dt {
+    font-family: 'Domine', serif;
+    font-size: 2em; }
+  .monFooter button,
+  .monFooter .champ {
+    border: none;
+    border-radius: 0.5em;
+    height: 2em;
+    text-align: center; }
+  .monFooter button {
+    background-color: #0f3e57;
+    border: 1px solid white;
+    color: white; }
+  .monFooter i {
+    margin-right: 1em; }
+
+fieldset {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 1em 2em;
+  width: 43%;
+  box-shadow: 0 0 10px lightgrey;
+  border: 1px solid lightgrey;
+  margin: 5em auto; }
+  fieldset input {
+    width: 100%;
+    border: 1px solid lightblue;
+    font-size: 1.5em; }
+  fieldset button {
+    margin-top: 1em; }
+  fieldset legend {
+    font-size: 2em;
+    background-color: #0f3e57;
+    box-shadow: 0 0 10px #0f3e57;
+    border: 1px solid #0f3e57;
+    color: white; }
+  fieldset label {
+    font-size: 1.5em;
+    flex-wrap: wrap; }
+  fieldset .password-verdict {
+    display: flex;
+    margin-top: -1em; }
+  fieldset .checkbox label {
+    padding: 0; }
+  fieldset .checkbox input[type="checkbox"] {
+    margin-left: 100px;
+    margin-top: 7px;
+    width: 0; }
+  fieldset .btn-danger {
+    margin: 0;
+    vertical-align: bottom;
+    width: 17%; }
+  fieldset #hidden {
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-top: 2em; }
+  fieldset textarea {
+    width: 100%; }
+
+@media screen and (max-width: 640px) {
+  .monHeader .list-inline {
+    margin-left: 0; }
+  .monHeader .marginHeader {
+    padding: 2em; }
+
+  .monMain {
+    padding: 1em; }
+    .monMain .col-md-2 {
+      width: 50%; }
+    .monMain .col-md-5, .monMain .col-md-10 {
+      padding: 0; }
+    .monMain .col-md-3 {
+      padding-bottom: 3em; }
+
+  .monFooter {
+    padding: 2em;
+    margin-top: 5em; }
+
+  section article {
+    width: 100%; }
+
+  fieldset {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
