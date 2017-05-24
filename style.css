@@ -1,3 +1,9 @@
+/*
+Theme Name: wordpress_sundays
+Author: ZHOR
+Description: YOLO THEME
+Version: 3151531213.115516531
+*/
 .monHeader {
   background-color: #281400; }
   .monHeader .list-inline {
@@ -39,6 +45,10 @@ h3 {
   font-size: 3em;
   margin: 1em 0; }
 
+#section {
+  width: 80%;
+  margin: auto; }
+
 section {
   display: flex;
   flex-wrap: wrap;
@@ -49,6 +59,14 @@ section {
     width: 15%;
     box-shadow: 0 5px 7px -1px lightgrey;
     margin-bottom: 1em; }
+  section .buy {
+    color: lightgreen; }
+  section .on-sale {
+    color: orange; }
+  section .sold-out {
+    color: red; }
+  section .price {
+    color: black; }
   section img {
     width: 100%; }
   section h4,

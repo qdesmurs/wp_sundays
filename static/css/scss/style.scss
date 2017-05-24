@@ -63,6 +63,10 @@ h3 {
     font-size: 3em;
     margin: 1em 0;
 }
+#section {
+    width: 80%;
+    margin: auto;
+}
 
 section {
     display: flex;
@@ -75,6 +79,18 @@ section {
         width: 15%;
         box-shadow: 0 5px 7px -1px lightgrey;
         margin-bottom: 1em;
+    }
+    .buy {
+        color: lightgreen;
+    }
+    .on-sale {
+        color: orange;
+    }
+    .sold-out {
+        color: red;
+    }
+    .price {
+        color: black;
     }
 
     img {

@@ -53,6 +53,7 @@
 <script src="./static/external/bower_components/jquery/dist/jquery.js"></script>
 <script src="./static/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="static/js/script.js"></script>
+<?php wp_footer(); ?>
 </body>
 
 

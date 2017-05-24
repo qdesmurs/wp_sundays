@@ -1,159 +1,56 @@
 <?php /* Template name: CV2 */ ?>
 <?php get_header() ?>
+<main>
+    <?php if (get_the_ID()== 22): ?>
+    <h3 class="text-center">Spring Summer 2017</h3>
+    <section>
+    <?php
 
-<body>
 
-    <div class="container-fluid">
-        <div class="row monHeader">
-            <div class="col-md-12 text-center">
-                <ul class="list-inline text-center">
-                    <li>Catalog</li>
-                    <li>About Us</li>
-                    <li>Store</li>
-                    <li>Blog</li>
-                    <li><a href="panier.html">Cart</a></li>
-                    <li class="pull-right"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
-                    <li class="pull-right"><a href="contact.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-                </ul>
-                <div class="marginHeader">
-                    <h1 class="text-center">Sundays</h1>
-                    <h2 class="text-center">We craft ocean <br> friendly apparel</h2>
-                    <button type="button" name="button">Browse our products</button>
-                </div>
-                <div class=" glyphicon glyphicon-menu-down pull-right"></div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
-    <main>
-        <h3 class="text-center">Spring Summer 2017</h3>
-        <section>
-            <article>
+        $args = array('category' => '6, 7, 8',
+                      'orderby'  => 'date',
+                      'order'    => 'ASC',
+                      'posts_per_page' => 12,);
+        $posts = get_posts($args);
 
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
+        foreach ($posts as $post) {
+            setup_postdata($post);
+            $cats = get_the_category();
+            ?>
+            <article class='<?php echo $cats[0]->slug; ?>'>
+            <img src='http://lorempixel.com/150/200' alt='img'>
+            <h4><?php echo $cats[0]->name; ?></h4>
+            <h4><a href=" <?php the_permalink(); ?> "><?php the_title(); ?></a></h4>
+            <h5 class="price"><?php the_meta() ?></h5>
             </article>
-            <article>
+            <?php
+        }
 
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="soldout">SOLD OUT</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
+    ?>
+    </section>
+        <?php elseif (get_the_ID()== 41): ?>
+            <section>
+                <?php
+                $args = array('category' => '9',
+                              'orderby'  => 'date',
+                              'order'    => 'ASC',
+                              'posts_per_page' => 12,);
+                $posts = get_posts($args);
 
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="onsale">ON SALE</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="soldout">SOLD OUT</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="onsale">ON SALE</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="onsale">ON SALE</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="soldout">SOLD OUT</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4 class="onsale">ON SALE</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
-            <article>
-
-                <a href="produit.html"><img src="http://lorempixel.com/100/150/" alt="img_product"></a>
-                <h4>BUY</h4>
-                <h5>Winter Scarf</h5>
-                <span>$180.00</span>
-            </article>
+                foreach ($posts as $post) {
+                    setup_postdata($post);
+                    $cats = get_the_category();
+                    ?>
+                    <article class='<?php echo $cats[0]->slug; ?>'>
+                    <img src='http://lorempixel.com/150/200' alt='img'>
+                    <h4><?php echo $cats[0]->name; ?></h4>
+                    <h4><a href=" <?php the_permalink(); ?> "><?php the_title(); ?></a></h4>
+                    <h5 class="price"><?php the_meta() ?></h5>
+                    </article>
+                    <?php
+                }
+                ?>
         </section>
-    </main>
+    <?php endif; ?>
+</main>
 <?php get_footer() ?>
