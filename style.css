@@ -48,6 +48,12 @@ h3 {
 #section {
   width: 80%;
   margin: auto; }
+  #section .artprod {
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 5px 7px -1px lightgrey;
+    padding: 1em;
+    background-color: whitesmoke; }
 
 section {
   display: flex;
@@ -67,69 +73,24 @@ section {
     color: red; }
   section .price {
     color: black; }
+  section .art {
+    width: 30%;
+    background-color: whitesmoke; }
+  section .imgblog {
+    padding: 1em; }
+  section .lep {
+    margin: 10px 50px; }
   section img {
     width: 100%; }
   section h4,
   section h5,
   section span {
     padding-left: 1em; }
-  section .onsale {
-    color: #ffcc17; }
-  section .soldout {
-    color: #929292; }
-
-.monMain .text-center {
-  font-family: 'Domine', serif;
-  font-size: 3em;
-  margin: 1em 0; }
-.monMain .col-md-2 {
-  padding: 0;
-  margin: 0 0.8em 0.8em 0;
-  width: 15.7%;
-  border-radius: 0.5em;
-  box-shadow: 0 5px 7px -1px lightgrey; }
-  .monMain .col-md-2 img {
-    width: 100%;
-    height: auto; }
-  .monMain .col-md-2 h4,
-  .monMain .col-md-2 h5,
-  .monMain .col-md-2 span {
-    margin-left: 1em; }
-  .monMain .col-md-2 h4 {
-    color: #a28f61; }
-  .monMain .col-md-2 .onsale {
-    color: #ffcc17; }
-  .monMain .col-md-2 .soldout {
-    color: #929292; }
-  .monMain .col-md-2 span {
-    padding-bottom: 1em; }
-.monMain .lorem {
-  margin-bottom: 7em; }
-.monMain .col-md-5 {
-  padding-left: 3em; }
-  .monMain .col-md-5 h6 {
-    font-size: 2em;
-    margin: 0 0 1em; }
-.monMain .col-md-10 {
-  padding-left: 5em; }
-.monMain .col-md-3 {
-  padding: 0; }
-  .monMain .col-md-3 img {
-    margin-right: 0.9em; }
-.monMain .champ {
-  border: none;
-  box-shadow: 1px 1px 15px 8px lightgrey;
-  height: 2em;
-  width: 3em;
-  border-radius: 0.5em; }
-.monMain button {
-  border: none;
-  box-shadow: 1px 1px 15px 8px lightgrey;
-  height: 2em;
-  width: 3em;
-  border-radius: 0.5em; }
-.monMain .button {
-  width: 8em; }
+  section .price ul,
+  section .blog ul {
+    list-style-type: none;
+    margin-left: -4em;
+    font-weight: bold; }
 
 .monFooter {
   background-color: #0f3e57;
@@ -161,50 +122,6 @@ section {
   .monFooter i {
     margin-right: 1em; }
 
-fieldset {
-  display: flex;
-  background-color: whitesmoke;
-  padding: 1em 2em;
-  width: 43%;
-  box-shadow: 0 0 10px lightgrey;
-  border: 1px solid lightgrey;
-  margin: 5em auto; }
-  fieldset input {
-    width: 100%;
-    border: 1px solid lightblue;
-    font-size: 1.5em; }
-  fieldset button {
-    margin-top: 1em; }
-  fieldset legend {
-    font-size: 2em;
-    background-color: #0f3e57;
-    box-shadow: 0 0 10px #0f3e57;
-    border: 1px solid #0f3e57;
-    color: white; }
-  fieldset label {
-    font-size: 1.5em;
-    flex-wrap: wrap; }
-  fieldset .password-verdict {
-    display: flex;
-    margin-top: -1em; }
-  fieldset .checkbox label {
-    padding: 0; }
-  fieldset .checkbox input[type="checkbox"] {
-    margin-left: 100px;
-    margin-top: 7px;
-    width: 0; }
-  fieldset .btn-danger {
-    margin: 0;
-    vertical-align: bottom;
-    width: 17%; }
-  fieldset #hidden {
-    width: 10px;
-    height: 10px;
-    float: right;
-    margin-top: 2em; }
-  fieldset textarea {
-    width: 100%; }
-
 @media screen and (max-width: 640px) {
   .monHeader .list-inline {
     margin-left: 0; }
@@ -226,8 +143,18 @@ fieldset {
 
   section article {
     width: 100%; }
+  section .art {
+    width: 100%; }
 
   fieldset {
-    width: 100%; } }
+    width: 100%; }
+
+  #section {
+    width: 70%;
+    margin: auto; }
+    #section .artprod {
+      width: 100%; }
+    #section img {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

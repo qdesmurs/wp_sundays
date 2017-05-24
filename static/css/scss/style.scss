@@ -66,6 +66,14 @@ h3 {
 #section {
     width: 80%;
     margin: auto;
+    
+    .artprod {
+        margin: auto;
+        width: 30%;
+        box-shadow: 0 5px 7px -1px lightgrey;
+        padding: 1em;
+        background-color: whitesmoke;
+    }
 }
 
 section {
@@ -92,6 +100,18 @@ section {
     .price {
         color: black;
     }
+    .art {
+        width: 30%;
+        background-color: whitesmoke;
+    }
+
+    .imgblog {
+        padding: 1em;
+    }
+
+    .lep {
+        margin: 10px 50px;
+    }
 
     img {
         width: 100%;
@@ -102,100 +122,11 @@ section {
     span {
         padding-left: 1em;
     }
-    .onsale {
-        color: #ffcc17;
-    }
-
-    .soldout {
-        color: #929292;
-    }
-}
-
-.monMain {
-    .text-center {
-        font-family: 'Domine', serif;
-        font-size: 3em;
-        margin: 1em 0;
-    }
-
-    .col-md-2 {
-        padding: 0;
-        margin: 0 0.8em 0.8em 0;
-        width: 15.7%;
-        border-radius: 0.5em;
-        box-shadow: 0 5px 7px -1px lightgrey;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        h4,
-        h5,
-        span {
-            margin-left: 1em;
-        }
-
-        h4 {
-            color: #a28f61;
-        }
-
-        .onsale {
-            color: #ffcc17;
-        }
-
-        .soldout {
-            color: #929292;
-        }
-
-        span {
-            padding-bottom: 1em;
-        }
-    }
-
-    .lorem {
-        margin-bottom: 7em;
-    }
-
-    .col-md-5 {
-        padding-left: 3em;
-
-        h6 {
-            font-size: 2em;
-            margin: 0 0 1em;
-        }
-    }
-
-    .col-md-10 {
-        padding-left: 5em;
-    }
-
-    .col-md-3 {
-        padding: 0;
-
-        img {
-            margin-right: 0.9em;
-        }
-    }
-
-    .champ {
-        border: none;
-        box-shadow: 1px 1px 15px 8px lightgrey;
-        height: 2em;
-        width: 3em;
-        border-radius: 0.5em;
-    }
-
-    button {
-        border: none;
-        box-shadow: 1px 1px 15px 8px lightgrey;
-        height: 2em;
-        width: 3em;
-        border-radius: 0.5em;
-    }
-
-    .button {
-        width: 8em;
+    .price ul,
+    .blog ul {
+        list-style-type: none;
+        margin-left: -4em;
+        font-weight: bold;
     }
 }
 
@@ -244,68 +175,6 @@ section {
     }
 }
 
-// formulaire
-
-fieldset {
-    display: flex;
-    background-color: whitesmoke;
-    padding: 1em 2em;
-    width: 43%;
-    box-shadow: 0 0 10px lightgrey;
-    border: 1px solid lightgrey;
-    margin: 5em auto;
-    input {
-        width: 100%;
-        border: 1px solid lightblue;
-        font-size: 1.5em;
-    }
-    button {
-        margin-top: 1em;
-    }
-    legend {
-        font-size: 2em;
-        background-color: #0f3e57;
-        box-shadow: 0 0 10px #0f3e57;
-        border: 1px solid #0f3e57;
-        color: white;
-    }
-    label {
-        font-size: 1.5em;
-        flex-wrap: wrap;
-    }
-
-    .password-verdict {
-        display: flex;
-        margin-top: -1em;
-    }
-
-    .checkbox label {
-        padding: 0;
-    }
-
-    .checkbox input[type="checkbox"] {
-        margin-left: 100px;
-        margin-top: 7px;
-        width: 0;
-    }
-
-    .btn-danger {
-        margin: 0;
-        vertical-align: bottom;
-        width: 17%;
-    }
-
-    #hidden {
-        width: 10px;
-        height: 10px;
-        float: right;
-        margin-top: 2em;
-    }
-    textarea {
-        width: 100%;
-    }
-}
-
 @media screen and(max-width: 640px) {
     .monHeader {
         .list-inline {
@@ -338,8 +207,21 @@ fieldset {
         article {
             width: 100%;
         }
+        .art {
+            width: 100%;
+        }
     }
     fieldset {
         width: 100%;
+    }
+    #section {
+        width: 70%;
+        margin: auto;
+        .artprod {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
     }
 }
